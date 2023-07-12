@@ -113,7 +113,7 @@ section{
 
 .shortenInput{
     margin-top: -8px;
-    width: 70vw;
+    width: 30vw;
     height: 50px;
     border-radius: 10px;
     font-size: 20px;
@@ -224,6 +224,11 @@ section{
     margin-bottom: -20px;
 }
 
+.asd{
+    display: flex;
+    flex-direction: column;
+}
+
 .sectionBtn{
     text-align: center;
     width: 140px;
@@ -234,6 +239,7 @@ section{
     background-color: hsl(180, 66%, 49%);
     color: white;
     border-radius: 15px;
+    margin-left: 95px;
 }
 .boostImage{
     background: hsl(257, 27%, 26%);
