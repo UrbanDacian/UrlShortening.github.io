@@ -15,32 +15,42 @@ body{
     display: flex;
     flex-direction: row;
     gap: 15px;
+    text-align: center;
+    align-items: center;
 }
 
 .headerBtn{
+    display: flex;
     color: gray;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     border: none;
     background-color: white;
+    text-align: center;
+    align-items: center;
 }
 
 .logo{
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
     border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.mobileHeader{
+    display: none;
 }
 
 .rightHeader{
     display: flex;
     justify-content: flex-end;
     gap: 30px;
+    text-align: center;
 }
 
 .signUpBtn{
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: gray;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
@@ -51,8 +61,18 @@ body{
     height: 35px;
     width: auto;
     padding: 1px 18px;
-    align-content: center;
+    text-align: center;
 }
+.dropdownContent{
+    display: none;
+    background-color: grey;
+}
+.leftHeaderBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
 article{
     display: flex;
     flex-direction: row;
@@ -297,13 +317,46 @@ footer{
     display: flex;
     gap: 20px;
 }
+.dropdownContent{
+    display: none;
+}
 
 @media only screen and (max-width: 400px) {
-    .headerBtn{
+    .leftHeaderBtn{
         display: none;
     }
     .rightHeader{
         display: none;
+    }
+    .mobileHeader{
+        display: flex;
+        flex-direction: row;
+    }
+    .dropdownContent{
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 15%;
+        top: 10%;
+        width: 300px;
+        height: 250px;
+        background: hsl(257, 27%, 26%);
+        border-radius: 20px;
+    }
+    .dropbtn{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin-top: -15px;
+        transform: rotate(90deg);
+        border: none;
+    }
+    .mobile{
+        display: flex;
+        justify-content: center;
+        background: hsl(257, 27%, 26%);
+        color: white;
+        text-align: center;
     }
 
     article{
@@ -395,6 +448,7 @@ footer{
     }
     footer{
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         margin-top: 34px;
     }

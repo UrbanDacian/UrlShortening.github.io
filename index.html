@@ -9,19 +9,32 @@
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <link rel="stylesheet" type="text/css" href="design.css">
-  <script ></script>
+  <script src = "script.js"></script>
 </head>
 <body>
   <header class="pageHeader">
     <div class="leftHeader">
       <p class="logo">Shortly</p>
-      <button class="headerBtn">Features</button>
-      <button class="headerBtn">Pricing</button>
-      <button class="headerBtn">Resources</button>
+      <div class="leftHeaderBtn">
+        <p class="headerBtn">Features</p>
+        <p class="headerBtn">Pricing</p>
+        <p class="headerBtn">Resources</p>
+      </div>
+    </div>
+    <div class="mobileHeader">
+      <button class="dropbtn" onclick="drop()"></button>
+      <div class="dropdownContent" id="dropdown-menu">
+        <p class="headerBtn mobile">Features</p>
+        <p class="headerBtn mobile">Pricing</p>
+        <p class="headerBtn mobile">Resources</p>
+        <p class="headerBtn mobile">Login</p>
+        <p class="signUpBtn" style="width: 70px; margin-left: 97px">Sign Up</p>
+      </div>
+
     </div>
    <div class="rightHeader">
-     <button class="headerBtn">Login</button>
-     <button class="signUpBtn">Sign Up</button>
+     <p class="headerBtn">Login</p>
+     <p class="signUpBtn">Sign Up</p>
    </div>
   </header>
   <main>
