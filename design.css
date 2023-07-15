@@ -134,14 +134,17 @@ section{
     margin-bottom: 80px;
 }
 .shortedLinks{
-    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
 }
 
 .linksContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 70vw;
+    justify-content: space-between;
+    width: 50vw;
 }
 
 .shorterImage{
@@ -184,6 +187,10 @@ section{
 .copyBtn{
     border-radius: 10px;
     background-color: hsl(180, 66%, 49%);
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
 }
 
 .sectionParagraph{

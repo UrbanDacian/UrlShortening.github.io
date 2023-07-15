@@ -43,7 +43,8 @@ function createDiv(initial, url){
             btn.style.backgroundColor = "hsl(180, 66%, 49%)";
         }, 3000);
     });
-    div1.appendChild(p1)
+    p.style.color = "hsl(180, 66%, 49%)";
+    div1.appendChild(p1);
     div1.appendChild(p);
     div.appendChild(div1);
     div.appendChild(btn);
